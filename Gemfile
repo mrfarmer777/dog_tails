@@ -39,6 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Allows for serving data as json in api setting
 gem 'active_model_serializers'
 
+# Allows for dual booting of webpack and rails servers
 gem 'foreman', '~>0.82.0'
 
 group :development, :test do
@@ -66,4 +67,5 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Allows CORS for webpack dev server
 gem 'rack-cors', :require => 'rack/cors'
